@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Profil Utilisateur</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="nettoyants.html">Nettoyants</a>
+            <a href="serums.html">Sérums</a>
+            <a href="cremes.html">Crèmes</a>
+            <a href="conseils.html">Conseils</a>
+        </nav>
+    </header>
+    <main>
+        <section class="user-profile">
+            <h2>Mon Profil</h2>
+            <form action="update_profile.php" method="post">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username" value="Utilisateur123">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="user@example.com">
+                <button type="submit">Mettre à jour</button>
+            </form>
+            <section class="user-contributions">
+                <h3>Mes Contributions</h3>
+                <ul>
+                    <li><a href="conseil1.html">Ne mélangez pas les actifs !</a></li>
+                    <!-- Autres contributions -->
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Skincare Tips</p>
+    </footer>
+</body>
+</html>

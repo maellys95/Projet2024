@@ -1,0 +1,193 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Style général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+    color: #333;
+}
+
+header {
+    background-color: #3a3f51;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #3a3f51;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style des produits */
+.product-list {
+    margin-bottom: 40px;
+}
+
+.product {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    color: #3a3f51;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Style des formulaires d'ajout de produit */
+.add-product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-product h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #3a3f51;
+}
+
+.add-product label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.add-product input[type="text"],
+.add-product textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.add-product button {
+    padding: 12px 20px;
+    background-color: #3a3f51;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.add-product button:hover {
+    background-color: #ffcc00;
+    color: #3a3f51;
+}
+
+/* Media query pour rendre la navigation horizontale sur les écrans larges */
+@media screen and (min-width: 768px) {
+    nav {
+        display: inline-block;
+    }
+    nav a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+/* Bouton de soumission de conseil */
+.submit-advice-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.submit-advice-button:hover {
+    background-color: #45a049;
+}
+
+/* Section de lien de profil */
+.profile-link {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.profile-link h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3a3f51;
+}
+
+.profile-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #3a3f51;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.profile-button:hover {
+    background-color: #ffcc00;
+    color: #3a3f51;
+}
